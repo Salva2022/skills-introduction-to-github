@@ -1,0 +1,64 @@
+# Git comandos
+
+# Listar drietórios
+ls 
+
+# Muda diretório
+cd "bibliotecaCobook" 
+
+# Clonar repositório pelo Git na máquina
+git clone https://github.com/Salva2022/bibliotecaCobook.git
+
+# Faz alterações no Git para todos arquivos
+git add . 
+
+# Logar na conta GitHub pelo git
+git config --global user.name "nome"
+git config --global user.email "gdenadai98@gmail.com"
+
+# Coloca mensagem no git local e update
+git commit -m "bibliotecaCobook" 
+
+# URL para enviar os nossos arquivos no GitHub
+git push -u origin main 
+
+#######################################################################################################
+
+# Buscar e integrar alterações no repositório remoto para o repositório local
+git pull origin main
+# Integrar alterações do repositório local no repositório remoto (APÓS REALIZAR O CAMINHO COMPLETO ABAIXO
+git push origin main
+
+#######################################################################################################
+
+#Realizar alterações no repositório local e integrar no repositório remoto (caminho completo)
+# Verificar as alterações feitas (ou não)
+git  status 
+# Adicionar num arquivo específico (OU para todos os arquivos: git add .)
+git add seu arquivo.py
+# Colocar comentários no que foi alterado
+git commit -m "O quer foi corrigido, seja formatação de mensagem, ou estrutura de código"
+# Com o commit criado, usar git push para enviar alterações no repositório remoto
+git push
+
+#######################################################################################################
+
+# Integrar alterações do repositório remoto para o repositório local.
+git pull origin main --allow-unrelated-histories
+
+Caso não funcione:
+# Adiciona o arquivo README.md para o próximo commit
+git add README.md
+
+# Cria um commit com uma mensagem descritiva
+git commit -m "Atualizei o README localmente"
+# Escreva o motivo da alteração.
+# Pressione a tecla Esc (Escape) no seu teclado. Isso garante que você está no "Modo de Comando" do Vim.
+# Digite os seguintes três caracteres: :wq e aperte enter.
+
+#######################################################################################################
+
+#"para quem começou e não deu clone"
+git remote add origin
+
+
